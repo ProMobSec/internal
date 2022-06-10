@@ -53,4 +53,21 @@
 > run
 ##### from bash
 > crackmapexec smb ***192.168.1.9*** -u "Administrator" -H 5835048ce94ad0564e29a924a03510ef --local-auth  
-
+# smtp
+#### msfconsole  
+> search smtp_enum
+#### bash
+> smtp-user-enum -M VRFY -U /usr/share/metasploit-framework/data/wordlists/unix_users.txt -t ***192.168.1.10**
+> nmap -p25 --script smtp-enum-users
+# smb
+#### bash
+> enum4linux -r ***192.168.1.10***  
+> smbmap -H ***192.168.1.10***  
+> nmap -p445 --script smb-enum-shares ***192.168.1.10***  
+> smbclient -N \\\\***192.168.1.10***\\***share*** -U ""  
+#### rpcclient
+> rpcclient -U "" -N ***192.168.1.10**  
+> enumdomusers
+> enumdomgroups
+> enumdomains
+> queryuser  
