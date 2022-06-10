@@ -66,7 +66,7 @@
 > nmap -p445 --script smb-enum-shares ***192.168.1.10***  
 > smbclient -N \\\\***192.168.1.10***\\***share*** -U ""  
 #### rpcclient
-> rpcclient -U "" -N ***192.168.1.10**  
+> rpcclient -U "" -N ***192.168.1.10***  
 > enumdomusers
 > enumdomgroups
 > enumdomains
